@@ -9,7 +9,9 @@ const ResetGlobalStyle = createGlobalStyle`
 
  html, body{
     height:100vh;
-    background-color: #ccc;
+    transition:  0.5s all;
+    background-color: ${({theme})=> theme.background};
+    color:${({theme})=> theme.color};
  }
 
 `

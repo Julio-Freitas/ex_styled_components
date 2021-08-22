@@ -21,5 +21,4 @@ export const Button = Styled.button.attrs(({color})=> ({
         background: ${({hoverColor})=> hoverColor};
     }
 
-
 `

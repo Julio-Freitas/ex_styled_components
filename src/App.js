@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Button from './components/button';
+import ResetGlobalStyle from './styles/reset';
+import * as Styled from './styles/container';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ResetGlobalStyle />
+      <Styled.Container>
+        <h1>COMPONENTES</h1>
+        <Button background="#4CAF50" hoverColor="#555555" color="white">
+          Button
+        </Button>
+      </Styled.Container>
+    </>
   );
 }
 

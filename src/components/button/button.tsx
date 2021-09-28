@@ -1,6 +1,7 @@
-import { ButtonHTMLAttributes } from 'react';
-import * as Styled from './style';
-import { ButtonProps } from './types';
+import { ButtonHTMLAttributes } from "react";
+import * as Styled from "./style";
+import { ButtonProps } from "./types";
+
 type TypeButton = ButtonHTMLAttributes<HTMLButtonElement> & {};
 
 const Button: React.FC<ButtonProps & TypeButton> = ({
@@ -10,14 +11,16 @@ const Button: React.FC<ButtonProps & TypeButton> = ({
   children,
   ...props
 }) => (
-  <Styled.Button
-    background={background}
-    hoverColor={hoverColor}
-    color={color}
-    {...props}
-  >
-    {children}
-  </Styled.Button>
+  <>
+    <Styled.Button
+      background={background}
+      hoverColor={hoverColor}
+      color={color}
+      {...props}
+    >
+      {children}
+    </Styled.Button>
+  </>
 );
 
 export default Button;

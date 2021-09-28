@@ -18,7 +18,17 @@ export const Button = Styled.button.attrs(({color})=> ({
     color: ${({color})=> color};
     background: ${({background})=> background};
     &:hover {
-        background: ${({hoverColor})=> hoverColor};
+        background: ${({hoverColor})=> hoverColor}
+    }
+    &:focus {
+        background: ${({hoverColor})=> hoverColor}
     }
 
+    @media screen and (max-width:600px) {
+        background: red !important;
+    }
+`
+
+export const Button2 = Styled(Button)`
+    color: red;
 `

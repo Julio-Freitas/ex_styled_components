@@ -7,8 +7,8 @@ type User = {
 };
 const ProviderUser = ({ children }: User) => {
   const [state, dispatch] = useReducer(RedurcerAuth, { user: "" });
-  const value = { state, dispatch };
-  return <ContextUser.Provider value={value}>{children}</ContextUser.Provider>;
+
+  return <ContextUser.Provider value={{ state, dispatch }}>{children}</ContextUser.Provider>;
 };
 
 export default ProviderUser;

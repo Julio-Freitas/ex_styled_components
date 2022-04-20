@@ -1,5 +1,5 @@
 type State = { user: string };
-type Action = { type: "getUser" };
+type Action = { type: "getUser" | ""};
 
 const INITAL_STATE = {
   user: "",

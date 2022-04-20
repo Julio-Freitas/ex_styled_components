@@ -7,11 +7,13 @@ const ResetGlobalStyle = createGlobalStyle`
      box-sizing: border-box;
  }
 
+ #root {
+     height: 100%;
+     padding: 0 19px;
+ }
  html, body{
-    height:100vh;
     transition:  0.5s all;
-    background-color: ${({theme})=> theme.background};
-    color:${({theme})=> theme.color};
+    height: 100%;
  }
 
 `
